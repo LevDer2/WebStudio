@@ -133,3 +133,19 @@ ul {
 .footer {
     background-color: #2F303A;
 }
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-list {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+}

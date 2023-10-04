@@ -64,6 +64,8 @@ ul {
     letter-spacing: 0.06em;
     text-align: center;
     color: #FFFFFF;
+    width: 696px;
+    margin: 0 auto;
 }
 
 .section-hero-btn {
@@ -73,6 +75,9 @@ ul {
     background-color: #2196F3;
     color: #FFFFFF;
     border: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .features-list-title {
@@ -148,4 +153,76 @@ ul {
 .nav-list {
     display: flex;
     gap: 50px;
+}
+
+.section-hero {
+    background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.features-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.features-list-item {
+    max-width: 270px;
+}
+
+.section-features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+address {
+    font-style: normal;
+
+}
+
+.work-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-work {
+    padding-bottom: 94px;
+}
+
+.work-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-work-title,
+.work-team-title {
+    margin-top: 30px;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
 }

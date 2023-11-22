@@ -141,7 +141,7 @@ ul {
 
 .header {
     display: flex;
-    justify-content: center;
+    gap: 93px;
     align-items: center;
 }
 
@@ -225,4 +225,41 @@ address {
 
 body {
     margin: 0;
+}
+
+.nav-list-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.buttons-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 34px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 6px 22px;
 }

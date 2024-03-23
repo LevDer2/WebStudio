@@ -288,3 +288,8 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.portfolio-teg{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

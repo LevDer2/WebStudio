@@ -1,3 +1,7 @@
+:root {
+    --text-color:#000000;
+}
+
 .logo {
     font-family: Raleway;
     font-size: 26px;

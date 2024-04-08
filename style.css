@@ -1,5 +1,11 @@
 :root {
     --text-color:#000000;
+    --logo:#2196F3;
+    --nav-list-link:#212121;
+    --contacts-list-link: #757575;
+    --white:#FFFFFF;
+    --addres-list-link:#FFFFFF99;
+    --footer:#2F303A;
 }
 
 .logo {
@@ -8,11 +14,11 @@
     font-weight: 700;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--logo);
 }
 
 .logo-header {
-    color: #000000;
+    color: var(--text-color);
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -34,7 +40,7 @@ ul {
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--nav-list-link);
 }
 
 .nav-list-link {
@@ -43,12 +49,12 @@ ul {
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #000000;
+    color: var(--text-color);
 }
 
 .contacts-list-link:hover,
 .nav-list-link:hover {
-    color: #2196F3;
+    color: var(--logo);
 }
 
 .contacts-list-link {
@@ -57,7 +63,7 @@ ul {
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--contacts-list-link);
 }
 
 .section-hero-title {
@@ -67,7 +73,7 @@ ul {
     line-height: 60px;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--white);
     width: 696px;
     margin: 0 auto;
 }
@@ -76,8 +82,8 @@ ul {
     width: 216px;
     height: 50px;
     border-radius: 4px;
-    background-color: #2196F3;
-    color: #FFFFFF;
+    background-color: var(--logo);
+    color: var(--white);
     border: none;
     display: block;
     margin: 0 auto;
@@ -90,7 +96,7 @@ ul {
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--nav-list-link);
 }
 
 .features-list-text {
@@ -99,7 +105,7 @@ ul {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--contacts-list-link);
 }
 
 .section-work-title {
@@ -109,7 +115,7 @@ ul {
     line-height: 42px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    color: var(--nav-list-link);
 }
 
 .work-team-title {
@@ -119,11 +125,11 @@ ul {
     line-height: 42px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    color: var(--nav-list-link);
 }
 
 .logo-footer {
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .addres-list-link {
@@ -132,15 +138,15 @@ ul {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #FFFFFF99;
+    color: var(--addres-list-link);
 }
 
 .location-link {
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--footer);
 }
 
 .header {
@@ -160,7 +166,7 @@ ul {
 }
 
 .section-hero {
-    background-color: #2F303A;
+    background-color: var(--footer);
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -258,8 +264,8 @@ body {
 
 .btn:hover {
     cursor: pointer;
-    background-color: #2196F3;
-    color: #FFFFFF;
+    background-color: var(--logo);
+    color: var(--white);
 }
 
 .btn {

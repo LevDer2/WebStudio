@@ -8,11 +8,15 @@
     --footer:#2F303A;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 .logo {
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--logo);
 }
@@ -22,7 +26,7 @@
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
 }
 
@@ -35,19 +39,17 @@ ul {
 }
 
 .nav-list-link {
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--nav-list-link);
 }
 
 .nav-list-link {
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
 }
@@ -58,19 +60,17 @@ ul {
 }
 
 .contacts-list-link {
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--contacts-list-link);
 }
 
 .section-hero-title {
-    font-family: Roboto;
     font-size: 44px;
     font-weight: 900;
-    line-height: 60px;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--white);
@@ -91,28 +91,25 @@ ul {
 }
 
 .features-list-title {
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--nav-list-link);
 }
 
 .features-list-text {
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--contacts-list-link);
 }
 
 .section-work-title {
-    font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
-    line-height: 42px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--nav-list-link);
@@ -122,7 +119,7 @@ ul {
     font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
-    line-height: 42px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--nav-list-link);
@@ -133,10 +130,9 @@ ul {
 }
 
 .addres-list-link {
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--addres-list-link);
 }

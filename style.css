@@ -306,3 +306,12 @@ body {
 .current {
     color: #2196F3;
 }
+
+.container {
+    width: 1600px;
+    outline: solid red;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}

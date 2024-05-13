@@ -307,8 +307,18 @@ body {
     color: #2196F3;
 }
 
+/* Якщо буду погано виглядати видалити container */
 .container {
     width: 1600px;
+    outline: solid red;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container1 {
+    width: 696px;
     outline: solid red;
     padding-left: 15px;
     padding-right: 15px;

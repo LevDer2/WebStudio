@@ -1,3 +1,4 @@
+/* Інше */
 :root {
     --text-color:#000000;
     --logo:#2196F3;
@@ -10,6 +11,39 @@
 
 body {
     font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+body {
+    margin: 0;
+}
+
+/* Header */
+
+.current {
+    color: #2196F3;
 }
 
 .logo {
@@ -28,14 +62,6 @@ body {
     font-weight: 700;
     line-height: 1.19;
     letter-spacing: 0.03em;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
 }
 
 .nav-list-link {
@@ -181,17 +207,6 @@ ul {
     padding-bottom: 94px;
 }
 
-ul,
-p,
-h1,
-h2,
-h3,
-h4,
-h5 {
-    margin: 0;
-    padding: 0;
-}
-
 address {
     font-style: normal;
 
@@ -226,10 +241,6 @@ address {
 .box {
     width: 1200px;
     margin: 0 auto;
-}
-
-body {
-    margin: 0;
 }
 
 .nav-list-item {
@@ -307,9 +318,9 @@ body {
     color: #2196F3;
 }
 
-/* Якщо буду погано виглядати видалити container */
+/* Якщо буде погано виглядати видалити container */
 .container {
-    width: 1600px;
+    width: 1200px;
     outline: solid red;
     padding-left: 15px;
     padding-right: 15px;

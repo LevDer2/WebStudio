@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,95 +20,95 @@
 <body>
     <header class="header">
         <div class="container">
-            <a class="logo" href="./index.html">Web <span class="logo-header">Studio</span></a>
-            <nav>
+            <nav class="header-nav">
+                <a class="header-logo" href="./index.html">Web<span class="header-span">Studio</span></a>
                 <ul class="nav-list">
-                    <li class="nav-list-item"><a class="nav-list-link current" href="./index.html">Студія</a></li>
-                    <li class="nav-list-item"><a class="nav-list-link" href="./pages/portfolio.html">Портфоліо</a></li>
-                    <li class="nav-list-item"><a class="nav-list-link" href="#">Контакти</a></li>
+                    <li class="nav-item"><a class="nav-link current" href="./index.html">Студія</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/portfolio.html">Портфоліо</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
                 </ul>
             </nav>
-            <ul class="contacts-list">
-                <li><a class="contacts-list-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="contacts-list-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <ul class="header-list">
+                <li class="header-item"><a class="header-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="header-item"><a class="header-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
     <main>
         <!-- секція герой -->
-        <section class="section-hero">
-            <div class="container1">
-                <h1 class="section-hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="section-hero-btn">Замовити послугу</button>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+                <button type="button" class="hero-btn">Замовити послугу</button>
             </div>
         </section>
         <!-- секція функций -->
-        <section class="section-features">
+        <section class="features">
             <div class="container">
                 <ul class="features-list">
-                    <li class="features-list-item">
-                        <h3 class="features-list-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p class="features-list-text">Ідейні міркування, і навіть початок повсякденної роботи з
+                    <li class="features-item">
+                        <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <p class="features-text">Ідейні міркування, і навіть початок повсякденної роботи з
                             формування
                             позиції.</p>
                     </li>
-                    <li class="features-list-item">
-                        <h3 class="features-list-title">ПУНКТУАЛЬНІСТЬ</h3>
-                        <p class="features-list-text">Завдання організації, особливо рамки і місце навчання кадрів тягне
+                    <li class="features-item">
+                        <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
+                        <p class="features-text">Завдання організації, особливо рамки і місце навчання кадрів тягне
                             у
                             себе.</p>
                     </li>
-                    <li class="features-list-item">
-                        <h3 class="features-list-title">ПЛАНУВАННЯ</h3>
-                        <p class="features-list-text">Так само консультація з широким активом значною мірою зумовлює.
+                    <li class="features-item">
+                        <h3 class="features-title">ПЛАНУВАННЯ</h3>
+                        <p class="features-text">Так само консультація з широким активом значною мірою зумовлює.
                         </p>
                     </li>
-                    <li class="features-list-item">
-                        <h3 class="features-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                        <p class="features-list-text">Значимість цих проблем настільки очевидна, що реалізація планових
+                    <li class="features-item">
+                        <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <p class="features-text">Значимість цих проблем настільки очевидна, що реалізація планових
                             завдань.</p>
                     </li>
                 </ul>
             </div>
         </section>
             <!-- секція робота -->
-            <section class="section-work">
+            <section class="work">
                 <div class="container">
-                    <h3 class="section-work-title">Чим ми займаємося</h3>
+                    <h3 class="work-title">Чим ми займаємося</h3>
                     <ul class="work-list">
-                        <li class="work-list-item"><img class="work-list-img" src="./img/program.jpg" alt="program">
+                        <li class="work-item"><img class="work-img" src="./img/program.jpg" alt="program">
                         </li>
-                        <li class="work-list-item"><img class="work-list-img" src="./img/computer.jpg" alt="computer">
+                        <li class="work-item"><img class="work-img" src="./img/computer.jpg" alt="computer">
                         </li>
-                        <li class="work-list-item"><img class="work-list-img" src="./img/designer.jpg" alt="designer">
+                        <li class="work-item"><img class="work-img" src="./img/designer.jpg" alt="designer">
                         </li>
                     </ul>
                 </div>
             </section>
             <!-- секція команда -->
-            <section class="section-team">
+            <section class="team">
                 <div class="container">
-                    <h2 class="section-team-title">Наша команда</h2>
+                    <h2 class="team-title">Наша команда</h2>
                     <ul class="team-list">
-                        <li class="team-list-item">
-                            <img width="270" class="team-list-img" src="./img/igor.jpg" alt="igor">
-                            <h3 class="team-list-title">Ігор Дем'яненко</h3>
-                            <p class="team-list-text">Product Designer</p>
+                        <li class="team-item">
+                            <img width="270" class="team-img" src="./img/igor.jpg" alt="igor">
+                            <h3 class="team-caption">Ігор Дем'яненко</h3>
+                            <p class="team-text">Product Designer</p>
                         </li>
-                        <li class="team-list-item">
-                            <img width="270" class="team-list-img" src="./img/olga.jpg" alt="olga">
-                            <h3 class="team-list-title">Ольга Рєпіна</h3>
-                            <p class="team-list-text">Frontend Developer</p>
+                        <li class="team-item">
+                            <img width="270" class="team-img" src="./img/olga.jpg" alt="olga">
+                            <h3 class="team-caption">Ольга Рєпіна</h3>
+                            <p class="team-text">Frontend Developer</p>
                         </li>
-                        <li class="team-list-item">
-                            <img width="270" class="team-list-img" src="./img/mukola.jpg" alt="mukola">
-                            <h3 class="team-list-title">Микола Тарасов</h3>
-                            <p class="team-list-text">Marketing</p>
+                        <li class="team-item">
+                            <img width="270" class="team-img" src="./img/mukola.jpg" alt="mukola">
+                            <h3 class="team-caption">Микола Тарасов</h3>
+                            <p class="team-text">Marketing</p>
                         </li>
-                        <li class="team-list-item">
-                            <img width="270" class="team-list-img" src="./img/muxaylo.jpg" alt="muxaylo">
-                            <h3 class="team-list-title">Михайло Єрмаков</h3>
-                            <p class="team-list-text">UI Designer</p>
+                        <li class="team-item">
+                            <img width="270" class="team-img" src="./img/muxaylo.jpg" alt="muxaylo">
+                            <h3 class="team-caption">Михайло Єрмаков</h3>
+                            <p class="team-text">UI Designer</p>
                         </li>
                     </ul>
                 </div>
@@ -117,22 +116,19 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="box">
-                <a class="logo" href="./index.html">Web<span class="logo-footer">Studio</span></a>
+                <a class="footer-logo" href="./index.html">Web<span class="logo-footer">Studio</span></a>
                 <address class="addres">
+                    <a class="footer-addres"
+                        href="https://www.google.com/maps/search/площа+Лесі+Українки,+26,+Киев/@50.4269816,30.5366207,17z/data=!3m1!4b1?entry=ttu">м.
+                        Київ, пр-т Лесі
+                        Українки, 26</a>
                     <ul class="addres-list">
-                        <li class="addres-list-item"><a class="addres-list-link location-link"
-                                href="https://www.google.com/maps/search/площа+Лесі+Українки,+26,+Киев/@50.4269816,30.5366207,17z/data=!3m1!4b1?entry=ttu">м.
-                                Київ, пр-т Лесі
-                                Українки, 26</a>
-                        </li>
-                        <li class="addres-list-item"><a class="addres-list-link"
+                        <li class="addres-item"><a class="addres-link"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="addres-list-item"><a class="addres-list-link" href="tel:+380961111111">+38 096 111 11
+                        <li class="addres-item"><a class="addres-link" href="tel:+380961111111">+38 096 111 11
                                 11</a></li>
                     </ul>
                 </address>
-            </div>
         </div>
     </footer>
     </div>

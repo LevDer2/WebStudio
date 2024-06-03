@@ -374,6 +374,14 @@ letter-spacing: 0.42px;
     gap: 30px;
 }
 
+.services-item {
+    width: 370px;
+height: 404px;
+flex-shrink: 0;
+border: 1px solid #EEE;
+background: #FFF;
+}
+
 .services-img {
     margin-bottom: 20px ;
 }
@@ -387,6 +395,7 @@ letter-spacing: 0.42px;
     line-height: 36px; /* 200% */
     letter-spacing: 1.08px;
     width: 322px;
+    margin-left: 24px;
 }
 
 .services-text {
@@ -398,4 +407,5 @@ letter-spacing: 0.42px;
     line-height: 30px; /* 187.5% */
     letter-spacing: 0.48px;
     width: 322px;
+    margin-left: 24px;
 }

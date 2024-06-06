@@ -385,6 +385,8 @@ background: #FFF;
 
 .services-img {
     margin-bottom: 20px ;
+    display: block;
+    width: 100%;
 }
 
 .services-caption {

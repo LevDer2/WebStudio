@@ -369,15 +369,16 @@ letter-spacing: 0.42px;
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+    /* max-width: 1200px;
+    margin: 0 auto; */
     gap: 30px;
 }
 
 .services-item {
-    width: 370px;
+    /* width: 370px;
 height: 404px;
-flex-shrink: 0;
+flex-shrink: 0; */
+flex-basis: calc((100% - 60px) / 3);
 border: 1px solid #EEE;
 background: #FFF;
 }

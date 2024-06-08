@@ -363,9 +363,13 @@ background: #FFF;
 }
 
 .services-img {
-    margin-bottom: 20px ;
     display: block;
     width: 100%;
+}
+
+.services-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .services-caption {

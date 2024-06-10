@@ -335,14 +335,22 @@ letter-spacing: 0.42px;
 
 .btn {
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 6px 22px;
+    color: var(--nav-list-link);
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.62; /* 162.5% */
+letter-spacing: 0.48px;
 }
 .buttons-list {
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .portfolio-list {
@@ -370,6 +378,8 @@ background: #FFF;
 .services-box {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .services-caption {
@@ -379,7 +389,6 @@ background: #FFF;
     line-height: 2; /* 200% */
     letter-spacing: 1.08px;
     width: 322px;
-    margin-left: 24px;
 }
 
 .services-text {
@@ -389,5 +398,4 @@ background: #FFF;
     line-height: 1.87; /* 187.5% */
     letter-spacing: 0.48px;
     width: 322px;
-    margin-left: 24px;
 }

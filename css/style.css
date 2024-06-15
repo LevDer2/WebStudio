@@ -161,6 +161,31 @@ border: none;
     gap: 30px;
 }
 
+.features-item::before {
+    content: "";
+    border-radius: 4px;
+    background: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    display: block;
+    background-image: url(../img/antenna.jpg);
+    background-repeat:no-repeat ;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.features-item:nth-child(2)::before {
+    background-image: url(../img/clock.jpg);
+}
+
+.features-item:nth-child(3)::before {
+    background-image: url(../img/diagram.jpg);
+}
+
+.features-item:nth-child(4)::before {
+    background-image: url(../img/astronaut.jpg);
+}
+
 .features-title {
     color: var(--nav-list-link);
 font-size: 14px;

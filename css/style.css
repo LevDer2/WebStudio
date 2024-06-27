@@ -157,6 +157,7 @@ background-color: var(--logo);
 padding: 10px 32px;
 border-radius: 4px;
 border: none;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* секція фютчерс */
@@ -367,6 +368,7 @@ letter-spacing: 0.42px;
     cursor: pointer;
     background-color: var(--logo);
     color: var(--white);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
 .btn {
@@ -382,6 +384,7 @@ font-weight: 500;
 line-height: 1.62; /* 162.5% */
 letter-spacing: 0.48px;
 }
+
 .buttons-list {
     display: flex;
     justify-content: center;

@@ -387,6 +387,9 @@ align-items: center;
 
 .client-link:hover {
 border: 1px solid var(--logo);
+.client-icon {
+    fill: var(--logo);
+}
 }
 
 .client-icon {

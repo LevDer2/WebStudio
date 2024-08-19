@@ -406,6 +406,11 @@ border: 1px solid var(--logo);
     padding-bottom: 60px;
 }
 
+.footer-box {
+    display: flex;
+    gap: 70px;
+}
+
 .footer-logo {
     color: var(--logo);
     font-family: Raleway;
@@ -457,6 +462,40 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
+}
+
+.footer-title {
+    color: var(--white);
+font-size: 14px;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+.footer-list {
+    display: flex;
+    gap: 10px;
+}
+
+.social-link {
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link:hover {
+    background-color: var(--logo);
+}
+
+.footer-icon{
+    fill: var(--white);
+    width: 20px;
+height: 20px;
 }
 
 .current {

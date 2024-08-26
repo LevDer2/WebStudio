@@ -10,6 +10,7 @@
     --footer:#2F303A;
     --team:#F5F4FA;
     --media:#AFB1B8;
+    --line:#ECECEC;
 }
 
 body {
@@ -52,7 +53,8 @@ img {
 /* Header */
 .header {
     padding-top: 24px;
-    padding-bottom: 25px ;
+    padding-bottom: 25px;
+    border-bottom: solid 1px var(--line);
 }
 
 .header .container{

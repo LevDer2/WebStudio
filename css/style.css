@@ -558,7 +558,7 @@ height: 20px;
     align-items: center;
     border-radius: 50%;
     background-color: transparent;
-    padding: 6px;
+    padding: 10px;
     position: absolute;
     top: 14px;
     right: 14px;
@@ -566,8 +566,8 @@ height: 20px;
   }
   
   .btn-svg {
-    width: 18px;
-    height: 18px;
+    width: 11px;
+    height: 11px;
   }
   
   .btn-svg:hover {

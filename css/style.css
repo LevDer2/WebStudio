@@ -543,9 +543,6 @@ height: 20px;
     align-items: flex-end;
 }
 
-.newsletter-label {
-    
-}
 
 .newsletter-input {
     border-radius: 4px;
@@ -557,6 +554,7 @@ height: 50px;
 padding-left: 16px;
 margin-top: 20px;
 display: block;
+color: var(--white);
 }
 
 .newsletter-button{

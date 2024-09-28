@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,13 +39,13 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
+                <button type="button" class="hero-btn" data-aos="zoom-out-down" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <!-- секція функций -->
         <section class="features">
             <div class="container">
-                <ul class="features-list">
+                <ul class="features-list" data-aos="fade-down-right">
                     <li class="features-item">
                         <!-- <svg class="svg">
                             <use href="./img/symbol-defs.svg#icon-antenna"></use>
@@ -76,19 +77,28 @@
             <!-- секція робота -->
             <section class="work">
                 <div class="container">
-                    <h3 class="work-title">Чим ми займаємося</h3>
+                    <h3 class="work-title" data-aos="zoom-in">Чим ми займаємося</h3>
                     <ul class="work-list">
-                        <li class="work-item"><img class="work-img" src="./img/program.jpg" alt="program">
+                        <li class="work-item" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"><img class="work-img" src="./img/program.jpg" alt="program">
                             <div class="work-box">
                                 <h2 class="work-text">Десктопні додатки</h2>
                             </div>
                         </li>
-                        <li class="work-item"><img class="work-img" src="./img/computer.jpg" alt="computer">
+                        <li class="work-item" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"><img class="work-img" src="./img/computer.jpg" alt="computer">
                             <div class="work-box">
                                 <h2 class="work-text">Мобільні додатки</h2>
                             </div>
                         </li>
-                        <li class="work-item"><img class="work-img" src="./img/designer.jpg" alt="designer">
+                        <li class="work-item" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"><img class="work-img" src="./img/designer.jpg" alt="designer">
                             <div class="work-box">
                                 <h2 class="work-text">Дизайнерські рішення</h2>
                             </div>
@@ -99,9 +109,9 @@
             <!-- секція команда -->
             <section class="team">
                 <div class="container">
-                    <h2 class="team-title">Наша команда</h2>
+                    <h2 class="team-title" data-aos="flip-left">Наша команда</h2>
                     <ul class="team-list">
-                        <li class="team-item">
+                        <li class="team-item" data-aos="flip-right">
                             <img width="270" class="team-img" src="./img/igor.jpg" alt="igor">
                             <div class="team-box">
                             <h3 class="team-caption">Ігор Дем'яненко</h3>
@@ -122,7 +132,7 @@
                             </svg></a></li>
                         </ul>
                         </li>
-                        <li class="team-item">
+                        <li class="team-item" data-aos="flip-right">
                             <img width="270" class="team-img" src="./img/olga.jpg" alt="olga">
                             <div class="team-box">
                             <h3 class="team-caption">Ольга Рєпіна</h3>
@@ -143,7 +153,7 @@
                                 </svg></a></li>
                             </ul>
                         </li>
-                        <li class="team-item">
+                        <li class="team-item" data-aos="flip-right">
                             <img width="270" class="team-img" src="./img/mukola.jpg" alt="mukola">
                             <div class="team-box">
                             <h3 class="team-caption">Микола Тарасов</h3>
@@ -164,7 +174,7 @@
                                 </svg></a></li>
                             </ul>
                         </li>
-                        <li class="team-item">
+                        <li class="team-item" data-aos="flip-right">
                             <img width="270" class="team-img" src="./img/muxaylo.jpg" alt="muxaylo">
                             <div class="team-box">
                             <h3 class="team-caption">Михайло Єрмаков</h3>
@@ -190,44 +200,49 @@
             </section>
             <section class="clients">
                 <div class="container">
-                    <h2 class="clients-title">Постійні клієнти</h2>
+                    <h2 class="clients-title" data-aos="fade-up-left">Постійні клієнти</h2>
                     <ul class="client-list">
-                        <li class="client-item">
+                        <li class="client-item" data-aos="flip-up">
                             <a href="#" class="client-link">
                                 <svg class="client-icon">
                                     <use href="./img/symbol-defs.svg#ya-co"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="client-item">
+                        <li class="client-item" data-aos="flip-down">
                             <a href="#" class="client-link">
                                 <svg class="client-icon">
                                     <use href="./img/symbol-defs.svg#company"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="client-item">
+                        <li class="client-item" data-aos="fade-up"
+                        data-aos-duration="3000">
                             <a href="#" class="client-link">
                                 <svg class="client-icon">
                                     <use href="./img/symbol-defs.svg#company-apple"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="client-item">
+                        <li class="client-item" data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-offset="500"
+                        data-aos-duration="500">
                             <a href="#" class="client-link">
                                 <svg class="client-icon">
                                     <use href="./img/symbol-defs.svg#foster"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="client-item">
+                        <li class="client-item" data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom">
                             <a href="#" class="client-link">
                                 <svg class="client-icon">
                                     <use href="./img/symbol-defs.svg#brand"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="client-item">
+                        <li class="client-item" data-aos="flip-left">
                             <a href="#" class="client-link">
                                 <svg class="client-icon">
                                     <use href="./img/symbol-defs.svg#tag-line"></use>
@@ -356,6 +371,10 @@
         </div>
       </div>
       <script src="./js/modal.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

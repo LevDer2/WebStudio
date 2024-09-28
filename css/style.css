@@ -219,7 +219,19 @@ width: 696px;
 margin-bottom: 30px;
 margin-left: auto;
 margin-right: auto ;
+animation-name: title;
+animation-duration: 2000ms;
 }
+
+ @keyframes title {
+  0% {
+    transform: translateX(2000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+ }
 
 .hero-btn {
 color: var(--white);

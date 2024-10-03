@@ -1,0 +1,143 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: solid 1px var(--line);
+}
+
+.header .container{
+    display: flex;
+}
+
+.header-nav{
+    display: flex;
+    margin-right:auto;
+}
+
+.header-logo {
+color: var(--logo);
+font-family: Raleway;
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+margin-right: 93px;
+}
+
+.header-span {
+color: var(--text-color);
+font-family: Raleway;
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.contacts-link:hover,
+.nav-link:hover {
+    color: var(--logo);
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+color: var(--nav-list-link);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--logo);
+   transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-delay: 0;
+}
+
+.header-list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.header-item {
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+
+.header-link {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header-link:hover {
+    .header-contact {
+        fill: var(--logo);
+    }
+    .header-cont {
+        color: var(--logo);
+    }
+}
+
+.header-link:hover,
+.header-link:focus {
+  transition-property: color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+  color: var(--logo);
+  
+  .header-contact {
+    fill: var(--logo);
+    transition-property: fill ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+  }
+
+  .header-cont {
+    transition-property: color ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+    color: var(--logo);
+  }
+}
+
+.header-contact {
+fill: var(--contacts-list-link);
+width: 16px;
+height: 12px;
+}
+
+.header-item:nth-child(2) .header-contact {
+    width: 10px;
+    height: 16px;
+}
+
+.header-cont {
+color: var(--contacts-list-link);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
+
+.header-cont:hover {
+    color: var(--logo);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}

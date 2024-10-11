@@ -1,9 +1,9 @@
-.services-im {
+.services__im {
     position: relative;
     overflow: hidden;
   }
 
-  .services-im:hover .services-paragraph {
+  .services__im:hover .services__paragraph {
     opacity: 1;
   transform: translate(0);
    transition-property: transform;

@@ -606,10 +606,6 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
-  /* .current:last-child::after {
-          width: 78px;
-  height: 4px;
-      } */
 }
 .backdrop .is__hidden {
   opacity: 0;
@@ -623,7 +619,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.backdrop__btn {
+.backdrop .modal .model__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -636,22 +632,22 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   outline: none;
 }
-.backdrop .btn__svg {
+.backdrop .modal .btn__svg {
   width: 11px;
   height: 11px;
 }
-.backdrop .btn__svg:hover {
+.backdrop .modal .btn__svg:hover {
   fill: #2196F3;
   cursor: pointer;
 }
-.backdrop__btn:hover .btn__svg, .backdrop__btn:focus .btn__svg {
+.backdrop .modal__btn:hover .btn__svg, .backdrop .modal__btn:focus .btn__svg {
   fill: #2196F3;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.backdrop__title {
+.backdrop .modal__title {
   color: var(--nav-list-link);
   font-size: 20px;
   font-weight: 700;
@@ -660,7 +656,7 @@ img {
   text-align: center;
   margin-bottom: 12px;
 }
-.backdrop__lab {
+.backdrop .modal__lab {
   color: var(--contacts-list-link);
   font-size: 12px;
   font-weight: 400;
@@ -668,7 +664,7 @@ img {
   letter-spacing: 0.12px;
   border: none;
 }
-.backdrop__inp {
+.backdrop .modal__inp {
   display: block;
   width: 448px;
   height: 40px;
@@ -679,10 +675,10 @@ img {
   margin-top: 4px;
   outline: none;
 }
-.backdrop__inp:hover {
+.backdrop .modal__inp:hover {
   border: none;
 }
-.backdrop__coment {
+.backdrop .modal__coment {
   display: block;
   width: 448px;
   height: 120px;
@@ -694,55 +690,55 @@ img {
   margin-top: 4px;
   outline: none;
 }
-.backdrop__box {
+.backdrop .modal__box {
   position: relative;
 }
-.backdrop__box:hover__inp, .backdrop__box:focus__inp {
+.backdrop .modal__box:hover__inp, .backdrop .modal__box:focus__inp {
   border: 1px solid #2196F3;
 }
-.backdrop__box:hover__svg, .backdrop__box:focus__svg {
+.backdrop .modal__box:hover__svg, .backdrop .modal__box:focus__svg {
   fill: #2196F3;
 }
-.backdrop__inp:hover + .backdrop__svg, .backdrop__inp:focus + .backdrop__svg {
+.backdrop .modal__inp:hover + .backdrop .modal__svg, .backdrop .modal__inp:focus + .backdrop .modal__svg {
   fill: #2196F3;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.backdrop__svg {
+.backdrop .modal__svg {
   width: 18px;
   height: 18px;
   top: 53%;
   left: 12px;
   position: absolute;
 }
-.backdrop__us {
+.backdrop .modal__us {
   width: 18px;
   height: 18px;
 }
-.backdrop__lab:hover__coment, .backdrop__lab:focus__coment {
+.backdrop .modal__lab:hover__coment, .backdrop .modal__lab:focus__coment {
   border: 1px solid #2196F3;
 }
-.backdrop__btn:hover .btn__svg, .backdrop__btn:focus .btn__svg {
+.backdrop .modal__btn:hover .btn__svg, .backdrop .modal__btn:focus .btn__svg {
   fill: #2196F3;
 }
-.backdrop__inp:hover, .backdrop__inp:focus {
+.backdrop .modal__inp:hover, .backdrop .modal__inp:focus {
   border-color: #2196F3;
 }
-.backdrop__chek {
+.backdrop .modal__chek {
   width: 16px;
   height: 16px;
   margin-right: 8px;
   outline: none;
 }
-.backdrop .check {
+.backdrop .modal .check {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 34px;
 }
-.backdrop .check__text {
+.backdrop .modal .check__text {
   color: var(--contacts-list-link);
   font-size: 14px;
   font-weight: 400;
@@ -750,7 +746,7 @@ img {
   letter-spacing: 0.42px;
   width: 400px;
 }
-.backdrop .check__link {
+.backdrop .modal .check__link {
   color: #2196F3;
   font-size: 14px;
   font-weight: 400;
@@ -758,10 +754,10 @@ img {
   letter-spacing: 0.42px;
   text-decoration-line: underline;
 }
-.backdrop__btn {
+.backdrop .modal__btn {
   text-align: center;
 }
-.backdrop .check__btn {
+.backdrop .modal .check__btn {
   color: #FFFFFF;
   text-align: center;
   font-size: 16px;

@@ -4,29 +4,28 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)) ;
+    background-image: linear-gradient($rgba, $rgba) ;
     opacity: 1;
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
-  }
-  
-  .is-hidden {
+
+  .is__hidden {
     opacity: 0;
     pointer-events: none;
   }
   
   .modal {
   padding: 40px ;
-  background-color: var(--white);
+  background-color: $white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   }
   
-  .model-btn {
+  &__btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,23 +35,23 @@
     position: absolute;
     top: 14px;
     right: 14px;
-    border: 1px solid rgba(0, 0, 0, 0.10);
+    border: 1px solid $gradient;
     outline: none;
   }
   
-  .btn-svg {
+  .btn__svg {
     width: 11px;
     height: 11px;
   }
   
-  .btn-svg:hover {
-    fill: var(--logo);
+  .btn__svg:hover {
+    fill: $logo;
     cursor: pointer;
   }
   
-  .model-btn:hover, .model-btn:focus {
-    .btn-svg {
-      fill: var(--logo);
+  &__btn:hover, &__btn:focus {
+    .btn__svg {
+      fill: $logo;
       transition-property: fill ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -60,7 +59,7 @@
     }
   }
 
-  .modal-title {
+  &__title {
     color: var(--nav-list-link);
   font-size: 20px;
   font-weight: 700;
@@ -70,7 +69,7 @@
   margin-bottom: 12px;
   }
   
-  .modal-lab {
+  &__lab {
     color: var(--contacts-list-link);
   font-size: 12px;
   font-weight: 400;
@@ -79,29 +78,29 @@
   border: none;
   }
   
-  .modal-inp {
+  &__inp {
     display: block;
     width: 448px;
   height: 40px;
   border-radius: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.10);
+  border: 1px solid $gradient;
   padding: 12px 12px 12px 42px;
   margin-bottom: 10px;
   margin-top: 4px;
   outline: none;
   }
   
-  .modal-inp:hover {
+  &__inp:hover {
   border: none;
   }
   
   
-  .model-coment {
+  &__coment {
     display: block;
     width: 448px;
   height: 120px;
   border-radius: 4px;
-  border-color: rgba(0, 0, 0, 0.10);
+  border-color: $gradient;
   padding: 12px 16px;
   margin-bottom: 25px;
   resize: none;
@@ -109,28 +108,28 @@
   outline: none;
   }
   
-  .modal-box {
+  &__box {
   position: relative;
   }
   
-  .modal-box:hover, .modal-box:focus {
-    .modal-inp {
-      border: 1px solid var(--logo);
+  &__box:hover, &__box:focus {
+    &__inp {
+      border: 1px solid $logo;
     }
-    .model-svg {
-      fill: var(--logo);
+    &__svg {
+      fill: $logo;
     }
   }
   
-  .modal-inp:hover + .model-svg, .modal-inp:focus + .model-svg {
-    fill: var(--logo); 
+  &__inp:hover + &__svg, &__inp:focus + &__svg {
+    fill: $logo; 
     transition-property: fill ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
     }
   
-  .model-svg {
+  &__svg {
     width: 18px;
     height: 18px;
     top: 53%;
@@ -138,28 +137,28 @@
     position: absolute;
   }
   
-  .modal-us {
+  &__us {
     width: 18px;
     height: 18px;
   }
 
-  .modal-lab:hover, .modal-lab:focus {
-    .model-coment {
-        border: 1px solid var(--logo);
+  &__lab:hover, &__lab:focus {
+    &__coment {
+        border: 1px solid $logo;
     }
   }
   
-  .model-btn:hover, .model-btn:focus {
-    .btn-svg {
-      fill: var(--logo);
+  &__btn:hover, &__btn:focus {
+    .btn__svg {
+      fill: $logo;
     }
   }
 
-.modal-inp:hover, .modal-inp:focus {
-    border-color: var(--logo);
+  &__inp:hover, &__inp:focus {
+    border-color: $logo;
   }
     
-  .modal-chek {
+  &__chek {
     width: 16px;
     height: 16px;
     margin-right: 8px;
@@ -173,7 +172,7 @@
     margin-bottom: 34px;
   }
   
-  .check-text {
+  .check__text {
     color: var(--contacts-list-link);
   font-size: 14px;
   font-weight: 400;
@@ -182,8 +181,8 @@
   width: 400px;
   }
   
-  .check-link {
-    color: var(--logo);
+  .check__link {
+    color: $logo;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
@@ -191,12 +190,12 @@
   text-decoration-line: underline;
   }
 
-.modal-btn {
+  &__btn {
     text-align: center;
   }
   
-  .check-btn {
-    color: var(--white);
+  .check__btn {
+    color: $white;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -204,31 +203,18 @@
   letter-spacing: 0.96px;
   padding: 10px 53px;
   border-radius: 4px;
-  background: var(--logo);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background: $logo;
+  box-shadow: 0px 4px 4px 0px $gradien;
   border: none;
   cursor: pointer;
   outline: none;
   }
 
-.current {
-    color: var(--logo);
-}
 
-    .current::after {
-        content: "";
-        width: 100%;
-height: 4px;
-border-radius: 2px;
-background: var(--logo);
-display: block;
-position: absolute;
-top: 48px;
-left: 0;
-box-sizing: border-box;
-    }
 
     /* .current:last-child::after {
         width: 78px;
 height: 4px;
     } */
+  }
+  

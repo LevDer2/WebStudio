@@ -24,9 +24,8 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-}
 
-.model-btn {
+.model__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,18 +39,18 @@ transform: translate(-50%, -50%);
   outline: none;
 }
 
-.btn-svg {
+.btn__svg {
   width: 11px;
   height: 11px;
 }
 
-.btn-svg:hover {
+.btn__svg:hover {
   fill: $logo;
   cursor: pointer;
 }
 
-.model-btn:hover, .model-btn:focus {
-  .btn-svg {
+.model__btn:hover, .model__btn:focus {
+  .btn__svg {
     fill: $logo;
     transition-property: fill ;
   transition-duration: 250ms;
@@ -60,7 +59,7 @@ transform: translate(-50%, -50%);
   }
 }
 
-.modal-title {
+&__title {
   color: $nav-list-link;
 font-size: 20px;
 font-weight: 700;
@@ -70,7 +69,7 @@ text-align: center;
 margin-bottom: 12px;
 }
 
-.modal-lab {
+&__lab {
   color: $contacts-list-link;
 font-size: 12px;
 font-weight: 400;
@@ -79,7 +78,7 @@ letter-spacing: 0.12px;
 border: none;
 }
 
-.modal-inp {
+&__inp {
   display: block;
   width: 448px;
 height: 40px;
@@ -91,12 +90,12 @@ margin-top: 4px;
 outline: none;
 }
 
-.modal-inp:hover {
+&__inp:hover {
 border: none;
 }
 
 
-.model-coment {
+.model__coment {
   display: block;
   width: 448px;
 height: 120px;
@@ -109,20 +108,20 @@ margin-top: 4px;
 outline: none;
 }
 
-.modal-box {
+&__box {
 position: relative;
 }
 
-.modal-box:hover, .modal-box:focus {
-  .modal-inp {
+&__box:hover, &__box:focus {
+  .modal__inp {
     border: 1px solid $logo;
   }
-  .model-svg {
+  .model__svg {
     fill: $logo;
   }
 }
 
-.modal-inp:hover + .model-svg, .modal-inp:focus + .model-svg {
+&__inp:hover + .model__svg, &__inp:focus + .model__svg {
   fill: $logo; 
   transition-property: fill ;
   transition-duration: 250ms;
@@ -130,7 +129,7 @@ position: relative;
   transition-delay: 0;
   }
 
-.model-svg {
+.model__svg {
   width: 18px;
   height: 18px;
   top: 53%;
@@ -138,28 +137,28 @@ position: relative;
   position: absolute;
 }
 
-.modal-us {
+&__us {
   width: 18px;
   height: 18px;
 }
 
-.modal-lab:hover, .modal-lab:focus {
-  .model-coment {
+&__lab:hover, &__lab:focus {
+  .model__coment {
       border: 1px solid $logo;
   }
 }
 
-.model-btn:hover, .model-btn:focus {
-  .btn-svg {
+.model__btn:hover, .model__btn:focus {
+  .btn__svg {
     fill: $logo;
   }
 }
 
-.modal-inp:hover, .modal-inp:focus {
+&__inp:hover, &__inp:focus {
   border-color: $logo;
 }
   
-.modal-chek {
+&__chek {
   width: 16px;
   height: 16px;
   margin-right: 8px;
@@ -173,7 +172,7 @@ position: relative;
   margin-bottom: 34px;
 }
 
-.check-text {
+.check__text {
   color: $contacts-list-link;
 font-size: 14px;
 font-weight: 400;
@@ -182,7 +181,7 @@ letter-spacing: 0.42px;
 width: 400px;
 }
 
-.check-link {
+.check__link {
   color: $logo;
 font-size: 14px;
 font-weight: 400;
@@ -191,11 +190,11 @@ letter-spacing: 0.42px;
 text-decoration-line: underline;
 }
 
-.modal-btn {
+&__btn {
   text-align: center;
 }
 
-.check-btn {
+.check__btn {
   color: $white;
 text-align: center;
 font-size: 16px;
@@ -227,6 +226,9 @@ top: 48px;
 left: 0;
 box-sizing: border-box;
   }
+}
+
+
 
   /* .current:last-child::after {
       width: 78px;

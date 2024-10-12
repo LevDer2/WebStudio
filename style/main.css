@@ -621,8 +621,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.model-btn {
+.modal .model__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -635,26 +634,22 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   outline: none;
 }
-
-.btn-svg {
+.modal .btn__svg {
   width: 11px;
   height: 11px;
 }
-
-.btn-svg:hover {
+.modal .btn__svg:hover {
   fill: #2196F3;
   cursor: pointer;
 }
-
-.model-btn:hover .btn-svg, .model-btn:focus .btn-svg {
+.modal .model__btn:hover .btn__svg, .modal .model__btn:focus .btn__svg {
   fill: #2196F3;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-
-.modal-title {
+.modal__title {
   color: #212121;
   font-size: 20px;
   font-weight: 700;
@@ -663,8 +658,7 @@ img {
   text-align: center;
   margin-bottom: 12px;
 }
-
-.modal-lab {
+.modal__lab {
   color: #757575;
   font-size: 12px;
   font-weight: 400;
@@ -672,8 +666,7 @@ img {
   letter-spacing: 0.12px;
   border: none;
 }
-
-.modal-inp {
+.modal__inp {
   display: block;
   width: 448px;
   height: 40px;
@@ -684,12 +677,10 @@ img {
   margin-top: 4px;
   outline: none;
 }
-
-.modal-inp:hover {
+.modal__inp:hover {
   border: none;
 }
-
-.model-coment {
+.modal .model__coment {
   display: block;
   width: 448px;
   height: 120px;
@@ -701,66 +692,55 @@ img {
   margin-top: 4px;
   outline: none;
 }
-
-.modal-box {
+.modal__box {
   position: relative;
 }
-
-.modal-box:hover .modal-inp, .modal-box:focus .modal-inp {
+.modal__box:hover .modal__inp, .modal__box:focus .modal__inp {
   border: 1px solid #2196F3;
 }
-.modal-box:hover .model-svg, .modal-box:focus .model-svg {
+.modal__box:hover .model__svg, .modal__box:focus .model__svg {
   fill: #2196F3;
 }
-
-.modal-inp:hover + .model-svg, .modal-inp:focus + .model-svg {
+.modal__inp:hover + .model__svg, .modal__inp:focus + .model__svg {
   fill: #2196F3;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-
-.model-svg {
+.modal .model__svg {
   width: 18px;
   height: 18px;
   top: 53%;
   left: 12px;
   position: absolute;
 }
-
-.modal-us {
+.modal__us {
   width: 18px;
   height: 18px;
 }
-
-.modal-lab:hover .model-coment, .modal-lab:focus .model-coment {
+.modal__lab:hover .model__coment, .modal__lab:focus .model__coment {
   border: 1px solid #2196F3;
 }
-
-.model-btn:hover .btn-svg, .model-btn:focus .btn-svg {
+.modal .model__btn:hover .btn__svg, .modal .model__btn:focus .btn__svg {
   fill: #2196F3;
 }
-
-.modal-inp:hover, .modal-inp:focus {
+.modal__inp:hover, .modal__inp:focus {
   border-color: #2196F3;
 }
-
-.modal-chek {
+.modal__chek {
   width: 16px;
   height: 16px;
   margin-right: 8px;
   outline: none;
 }
-
-.check {
+.modal .check {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 34px;
 }
-
-.check-text {
+.modal .check__text {
   color: #757575;
   font-size: 14px;
   font-weight: 400;
@@ -768,8 +748,7 @@ img {
   letter-spacing: 0.42px;
   width: 400px;
 }
-
-.check-link {
+.modal .check__link {
   color: #2196F3;
   font-size: 14px;
   font-weight: 400;
@@ -777,12 +756,10 @@ img {
   letter-spacing: 0.42px;
   text-decoration-line: underline;
 }
-
-.modal-btn {
+.modal__btn {
   text-align: center;
 }
-
-.check-btn {
+.modal .check__btn {
   color: #FFFFFF;
   text-align: center;
   font-size: 16px;
@@ -797,12 +774,10 @@ img {
   cursor: pointer;
   outline: none;
 }
-
-.current {
+.modal .current {
   color: #2196F3;
 }
-
-.current::after {
+.modal .current::after {
   content: "";
   width: 100%;
   height: 4px;

@@ -59,14 +59,14 @@
             margin-bottom: 30px;
         }
         
-        .team__link:hover {
+        &__link:hover {
             background-color: $logo;
-            .team__svg {
+            &__svg {
                 fill: $white;
             }
         }
         
-        .team__link {
+        &__link {
             width: 44px;
             height: 44px;
             padding: 12px;
@@ -76,8 +76,8 @@
             align-items: center;
         }
         
-        .team__link:hover,
-         .team__link:focus {
+        &__link:hover,
+        &__link:focus {
           border-radius: 50%;
           background-color: $logo;
           transition-property: background-color ;

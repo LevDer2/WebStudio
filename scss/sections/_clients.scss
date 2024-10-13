@@ -12,13 +12,13 @@
     margin-bottom: 50px;
     }
     
-    .client__list{
+    &__list{
         display: flex;
         gap: 30px;
         justify-content: center;
     }
     
-    .client__link {
+    &__link {
         padding: 16px 32px;
         border-radius: 4px;
     border: 1px solid $media;
@@ -27,21 +27,21 @@
     align-items: center;
     }
     
-    .client__link:hover {
+    &__link:hover {
     border: 1px solid $logo;
-    .client__icon {
+    &__icon {
         fill: $logo;
     }
     }
     
-    .client__link:hover, .client__link:focus {
+    &__link:hover, &__link:focus {
         border: 1px solid $logo;
         outline: none;
       transition-property: border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-delay: 0;
-        .client__icon {
+        .clients__icon {
           fill: $logo;
           transition-property: fill;
         transition-duration: 250ms;
@@ -50,7 +50,7 @@
         }
       }
     
-    .client__icon {
+    &__icon {
         fill: $media;
         width: 106px;
         height: 60px;

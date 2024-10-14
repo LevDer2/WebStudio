@@ -63,13 +63,12 @@ img {
   line-height: 1.38;
   letter-spacing: 0.78px;
 }
-.header .nav__list {
+.header .nav {
   display: flex;
   gap: 50px;
   align-items: center;
 }
-.header .contacts__link:hover,
-.header .nav__link:hover {
+.header .nav .contacts__link:hover, .header .nav__link:hover {
   color: #2196F3;
 }
 .header .nav__item {
@@ -82,8 +81,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
-.header .nav__link:hover,
-.header .nav__link:focus {
+.header .nav__link:hover, .header .nav__link:focus {
   color: #2196F3;
   transition-property: color;
   transition-duration: 250ms;
@@ -376,7 +374,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.team .team__svg {
+.team__svg {
   fill: #AFB1B8;
 }
 
@@ -797,7 +795,7 @@ height: 4px;
 .btn:hover {
   cursor: pointer;
   background-color: #2196F3;
-  color: var(--white);
+  color: #FFFFFF;
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -881,7 +879,7 @@ height: 4px;
   opacity: 1;
 }
 
-.services-item:hover .services-paragraph {
+.services-item:hover, .services-paragraph {
   opacity: 1;
   transform: translate(0);
   transition-property: transform;

@@ -32,9 +32,10 @@
         }
         
         .nav {
-            display: flex;
+            @include flex-box($a: flex-start);
+            // display: flex;
             gap: 50px;
-            align-items: center;
+            // align-items: center;
 
             .contacts__link:hover,
             &__link:hover {
@@ -66,9 +67,10 @@
         
         
         &__list {
-            display: flex;
+            @include flex-box($a: flex-start);
+            // display: flex;
             gap: 50px;
-            align-items: center;
+            // align-items: center;
         }
         
         &__item {
@@ -78,8 +80,9 @@
         
         &__link {
             gap: 10px;
-            display: flex;
-            align-items: center;
+            @include flex-box($a: flex-start);
+            // display: flex;
+            // align-items: center;
         }
         
         &__:hover {

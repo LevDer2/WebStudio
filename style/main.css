@@ -65,8 +65,9 @@ img {
 }
 .header .nav {
   display: flex;
-  gap: 50px;
+  justify-content: flex-start;
   align-items: center;
+  gap: 50px;
 }
 .header .nav .contacts__link:hover, .header .nav__link:hover {
   color: #2196F3;
@@ -90,8 +91,9 @@ img {
 }
 .header__list {
   display: flex;
-  gap: 50px;
+  justify-content: flex-start;
   align-items: center;
+  gap: 50px;
 }
 .header__item {
   margin-bottom: 0;
@@ -100,6 +102,7 @@ img {
 .header__link {
   gap: 10px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 .header__:hover__contact {

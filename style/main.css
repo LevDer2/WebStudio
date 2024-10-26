@@ -86,17 +86,11 @@ img {
 }
 .header__logo {
   color: #2196F3;
-  font-family: Raleway;
+  font-family: "Raleway";
   font-size: 24px;
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.72px;
-}
-@media screen and (min-width: 480px) {
-  .header__logo {
-    font-size: 24px;
-    letter-spacing: 0.72px;
-  }
 }
 @media screen and (min-width: 768px) {
   .header__logo {
@@ -258,25 +252,42 @@ img {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/hero.jpg);
-  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__title {
   color: #FFFFFF;
   text-align: center;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36; /* 136.364% */
-  letter-spacing: 2.64px;
+  line-height: 1.61; /* 136.364% */
+  letter-spacing: 1.56px;
   text-transform: uppercase;
-  width: 696px;
+  width: 360px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36; /* 136.364% */
+    letter-spacing: 2.64px;
+    width: 696px;
+  }
 }
 .hero__btn {
   color: #FFFFFF;
@@ -286,15 +297,25 @@ img {
   line-height: 1.87; /* 187.5% */
   letter-spacing: 0.96px;
   background-color: #2196F3;
-  padding: 10px 32px;
+  padding: 10px 24px;
   border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    padding: 10px 32px;
+  }
+}
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+  }
 }
 .features__list {
   display: flex;
@@ -304,13 +325,27 @@ img {
   content: "";
   border-radius: 4px;
   background: #F5F4FA;
-  width: 270px;
   height: 120px;
   display: block;
   background-image: url(../img/antenna.jpg);
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .features__item::before {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__item::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item::before {
+    width: 270px;
+  }
 }
 .features__item:nth-child(2)::before {
   background-image: url(../img/clock.jpg);

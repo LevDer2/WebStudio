@@ -5,17 +5,31 @@
     &__title {
         color: $nav-list-link;
     text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.16;
-    letter-spacing: 1.08px;
+    letter-spacing: 0.84px;
     margin-bottom: 50px;
+
+      @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        letter-spacing: 1.08px;
+      }
     }
     
     &__list{
         display: flex;
         gap: 30px;
         justify-content: center;
+        flex-direction: column;
+
+            @media screen and (min-width: 768px) {
+                flex-direction: row;
+                flex-wrap: wrap;
+              }
+              @media screen and (min-width: 1200px) {
+                flex-wrap: nowrap;
+              }
     }
     
     &__link {

@@ -1,6 +1,12 @@
 .clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
 
     &__title {
         color: $nav-list-link;
@@ -9,27 +15,40 @@
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 0.84px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
-      @media screen and (min-width: 1200px) {
-        font-size: 36px;
-        letter-spacing: 1.08px;
-      }
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      letter-spacing: 1.08px;
+      margin-bottom: 50px;
+    }
     }
     
     &__list{
+      flex-wrap: wrap;
         display: flex;
         gap: 30px;
         justify-content: center;
-        flex-direction: column;
 
-            @media screen and (min-width: 768px) {
-                flex-direction: row;
-                flex-wrap: wrap;
-              }
-              @media screen and (min-width: 1200px) {
-                flex-wrap: nowrap;
-              }
+        @media screen and (min-width: 480px) {
+          flex-wrap: wrap;
+        }
+    
+        @media screen and (min-width: 1200px) {
+          justify-content: space-between;
+        }
+    }
+
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 150px) / 6);
+    }
     }
     
     &__link {
@@ -39,6 +58,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
     }
     
     &__link:hover {

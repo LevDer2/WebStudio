@@ -3,18 +3,38 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    &__box {
-        display: flex;
-        gap: 70px;
-    }
+    & > .container {
+  display: flex;
+  align-items:first baseline;
+  flex-direction: column;
+  text-align: center;
+  gap: 60px;
+  align-items: center;
+  @media screen and (min-width:480px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width:768px) {
+    flex-direction: row;
+  }
+}
+
+    // &__box {
+    //     display: flex;
+    //     gap: 70px;
+    // }
     
     &__logo {
         color: $logo;
         font-family: Raleway;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 700;
-        line-height: 1.38;
-        letter-spacing: 0.78px;
+  line-height: 1.38;
+  letter-spacing: 0.72px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
         }
         
         .logo__footer {
@@ -150,6 +170,17 @@
         display: block;
         color: $white;
         outline: none;
+        width: 100%;
+
+  @media screen and (min-width:480px){
+    width: 450px
+  }
+  @media screen and (min-width:768px){
+    width: 450px
+  }
+  @media screen and (min-width:1200px){
+    width: 358px;
+  }
         }
         
         &__button{
@@ -186,4 +217,5 @@
     
     
 }
+
 

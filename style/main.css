@@ -734,17 +734,41 @@ img {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.71; /* 171.429% */
+  line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
+}
+@media screen and (max-width: 1200px) {
+  .footer .addres__link {
+    line-height: 1.71;
+  }
 }
 .footer__addres {
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.71; /* 171.429% */
+  line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
   margin-bottom: 9px;
   margin-top: 20px;
+}
+@media screen and (max-width: 480px) {
+  .footer__addres {
+    width: 232px;
+    height: 21px;
+    flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__addres {
+    width: 232px;
+    height: 21px;
+    flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer__addres {
+    line-height: 1.71;
+  }
 }
 .footer__title {
   color: #FFFFFF;
@@ -1110,7 +1134,19 @@ height: 4px;
   gap: 8px;
   margin-bottom: 50px;
 }
-
+@media screen and (max-width: 480px) {
+  .buttons__list {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+}
+@media screen and (max-width: 768px) {
+  .buttons__list {
+    margin-bottom: 30px;
+  }
+}
 .services__im {
   position: relative;
   overflow: hidden;
@@ -1132,7 +1168,19 @@ height: 4px;
   margin: 0 auto; */
   gap: 30px;
 }
-
+@media screen and (max-width: 480px) {
+  .portfolio__list {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+}
 .services__item {
   /* width: 370px;
   height: 404px;
@@ -1187,8 +1235,18 @@ height: 4px;
   transition-delay: 0;
   transform: translatey(370px);
   overflow: hidden;
+  height: 294px;
 }
-
+@media screen and (max-width: 480px) {
+  .services__paragraph {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services__paragraph {
+    width: 354px;
+  }
+}
 .services__box {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1203,7 +1261,6 @@ height: 4px;
   line-height: 2; /* 200% */
   letter-spacing: 1.08px;
 }
-
 .services__img {
   display: block;
   width: 100%;

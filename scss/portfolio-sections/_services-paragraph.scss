@@ -20,4 +20,17 @@
   transition-delay: 0;
   transform: translatey(370px);
   overflow: hidden;
+  height: 294px;
+
+  @media screen and (max-width: 480px) {
+    width: 450px;
+        }
+    
+        @media screen and (max-width: 768px) {
+          width: 354px;
+        }
+    
+        @media screen and (max-width: 1200px){
+           
+        }
   }

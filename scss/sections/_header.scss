@@ -18,6 +18,11 @@
       padding-bottom: 25px;
     }
 
+    & > .container {
+        display: flex;
+        align-items: center;
+      }
+
 &__,.container{
         display: flex;
     }

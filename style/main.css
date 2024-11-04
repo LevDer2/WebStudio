@@ -77,6 +77,10 @@ img {
     padding-bottom: 25px;
   }
 }
+.header > .container {
+  display: flex;
+  align-items: center;
+}
 .header__, .header .container {
   display: flex;
 }
@@ -276,10 +280,15 @@ img {
   line-height: 1.61; /* 136.364% */
   letter-spacing: 1.56px;
   text-transform: uppercase;
-  width: 360px;
+  width: 100%;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -339,7 +348,7 @@ img {
   content: "";
   border-radius: 4px;
   background: #F5F4FA;
-  width: 450px;
+  width: 100%;
   height: 120px;
   display: block;
   background-image: url(../img/antenna.jpg);
@@ -347,16 +356,19 @@ img {
   background-position: center;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 480px) {
+  .features__item::before {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .features__item::before {
     width: 354px;
-    height: 120px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features__item::before {
     width: 270px;
-    height: 120px;
   }
 }
 .features__item:nth-child(2)::before {
@@ -679,20 +691,37 @@ img {
 }
 .footer > .container {
   display: flex;
-  align-items: first baseline;
   flex-direction: column;
   text-align: center;
-  gap: 60px;
-  align-items: center;
-}
-@media screen and (min-width: 480px) {
-  .footer > .container {
-    flex-direction: column;
-  }
+  justify-content: center;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .footer > .container {
+    align-items: first baseline;
     flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer > .container {
+    text-align: start;
+  }
+}
+.footer__div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__div {
+    width: 235px;
+    margin-right: 165px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__div {
+    margin-right: 70px;
   }
 }
 .footer__logo {
@@ -722,13 +751,23 @@ img {
   font-style: normal;
 }
 .footer .addres__list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
   margin-top: 9px;
-}
-.footer .addres__item {
-  margin-bottom: 9px;
 }
 .footer .addres__item:last-child {
   margin-bottom: 0px;
+}
+@media screen and (min-width: 768px) {
+  .footer .addres__news {
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .addres__news {
+    margin-left: 0px;
+  }
 }
 .footer .addres__link {
   color: rgba(255, 255, 255, 0.6);
@@ -781,6 +820,7 @@ img {
 }
 .footer__list {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 .footer .social__link {
@@ -817,6 +857,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
+@media screen and (min-width: 1200px) {
+  .footer .newsletter {
+    margin-left: auto;
+  }
+}
 .footer .newsletter__title {
   color: #FFFFFF;
   font-size: 14px;
@@ -824,32 +869,42 @@ img {
   line-height: 1.14;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer .newsletter__title {
+    margin-top: 0px;
+  }
 }
 .footer .newsletter__form {
   display: flex;
+  flex-direction: column;
   gap: 20px;
-  align-items: flex-end;
+}
+@media screen and (min-width: 1200px) {
+  .footer .newsletter__form {
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+  }
 }
 .footer .newsletter__input {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.48px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-  margin-top: 20px;
-  display: block;
-  color: #FFFFFF;
-  outline: none;
   width: 100%;
 }
 @media screen and (min-width: 480px) {
-  .footer .newsletter__input {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
   .footer .newsletter__input {
     width: 450px;
   }
@@ -881,6 +936,14 @@ img {
   gap: 10px;
   cursor: pointer;
   outline: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer .newsletter__button {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 .footer .newsletter__svg {
   fill: #FFFFFF;

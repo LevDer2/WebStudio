@@ -255,6 +255,125 @@ img {
   box-sizing: border-box;
 }
 
+.hero__button {
+  background: none;
+  border: transparent;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero__button {
+    display: none;
+  }
+}
+
+.hero__menu {
+  width: 40px;
+  height: 40px;
+  fill: #000;
+}
+
+.menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: #FFF;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+  opacity: 1;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  z-index: 3;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.menu__btn {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.menu__close {
+  width: 40px;
+  height: 40px;
+}
+
+.menu__close:hover {
+  fill: #2196F3;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.menu__link {
+  color: #212121;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.menu__list-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+  margin-top: 188px;
+}
+
+.menu__item-contact:first-child .menu__link-contact {
+  color: #2196F3;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.68px;
+}
+
+.menu__link-contact {
+  color: #757575;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.48px;
+}
+
+.menu__list-socials {
+  display: flex;
+}
+
+.menu__item-social:not(:last-child) {
+  margin-right: 10px;
+  display: flex;
+}
+.menu__item-social:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 22px;
+  background: rgba(33, 33, 33, 0.2);
+  display: block;
+  margin-left: 10px;
+}
+
+.menu__link-social {
+  color: #2196F3;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  /* 122.222% */
+  letter-spacing: 0.36px;
+}
+
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;

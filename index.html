@@ -22,6 +22,11 @@
         <div class="container">
             <nav class="header__nav">
                 <a class="header__logo" href="./index.html">Web<span class="header__span">Studio</span></a>
+                <button type="button" class="hero__button" modal-header-open>
+                    <svg class="hero__menu">
+                    <use href="./img/symbol-defs.svg#menu"></use>
+                    </svg>
+                    </button>
                 <ul class="nav">
                     <li class="nav__item"><a class="nav__link current" href="./index.html">Студія</a></li>
                     <li class="nav__item"><a class="nav__link" href="./pages/portfolio.html">Портфоліо</a></li>
@@ -32,6 +37,26 @@
                 <li class="header__item"><a class="header__link" href="mailto:info@devstudio.com"><svg class="header__contact"><use href="./img/symbol-defs.svg#envelope"></use></svg><span class="header__cont">info@devstudio.com</span></a></li>
                 <li class="header__item"><a class="header__link" href="tel:+380961111111"><svg class="header__contact"><use href="./img/symbol-defs.svg#smartphone"></use></svg><span class="header__cont">+38 096 111 11 11</span></a></li>
             </ul>
+            <div class="menu is-hidden" header-modal>
+                <button type="button" class="menu__btn" modal-header-close><svg class="menu__close">
+                  <use href="./img/symbol-defs.svg#cross"></use>
+                </svg></button>
+                <ul class="menu__list">
+                  <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
+                  <li class="menu__item"><a href="./pages/portfolio.html" class="menu__link">Портфоліо</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+                </ul>
+                <ul class="menu__list-contact">
+                  <li class="menu__item-contact"><a href="tel:+380961111111" class="menu__link-contact">+38 096 111 11 11</a></li>
+                  <li class="menu__item-contact"><a href="mailto:info@devstudio.com" class="menu__link-contact">info@devstudio.com</a></li>
+                </ul>
+                <ul class="menu__list-socials">
+                  <li class="menu__item-social"><a href="#" class="menu__link-social">Instagram</a></li>
+                  <li class="menu__item-social"><a href="#" class="menu__link-social">Twitter</a></li>
+                  <li class="menu__item-social"><a href="#" class="menu__link-social">Facebook</a></li>
+                  <li class="menu__item-social"><a href="#" class="menu__link-social">LinkedIn</a></li>
+                </ul>
+              </div>
         </div>
     </header>
     <main>
@@ -366,6 +391,7 @@
         </div>
       </div> -->
       <script src="./js/modal.js"></script>
+      <script src="./js/modal-header.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init();

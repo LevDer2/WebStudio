@@ -1088,6 +1088,15 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 4px;
+  width: 450px;
+  height: 609px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: auto;
+    height: auto;
+  }
 }
 .modal .model__btn {
   display: flex;
@@ -1121,10 +1130,17 @@ img {
   color: #212121;
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.15;
   letter-spacing: 0.6px;
   text-align: center;
   margin-bottom: 12px;
+  line-height: 30px;
+  width: 370px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+    width: auto;
+  }
 }
 .modal__lab {
   color: #757575;
@@ -1136,22 +1152,26 @@ img {
 }
 .modal__inp {
   display: block;
-  width: 448px;
-  height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 12px 12px 12px 42px;
   margin-bottom: 10px;
   margin-top: 4px;
   outline: none;
+  width: 370px;
+  height: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__inp {
+    width: 448px;
+    height: 40px;
+  }
 }
 .modal__inp:hover {
   border: none;
 }
 .modal__coment {
   display: block;
-  width: 448px;
-  height: 120px;
   border-radius: 4px;
   border-color: rgba(0, 0, 0, 0.1);
   padding: 12px 16px;
@@ -1159,6 +1179,14 @@ img {
   resize: none;
   margin-top: 4px;
   outline: none;
+  width: 370px;
+  height: 120px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__coment {
+    width: 448px;
+    height: 120px;
+  }
 }
 .modal__box {
   position: relative;
@@ -1210,19 +1238,31 @@ img {
 }
 .modal .check__text {
   color: #757575;
-  font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.42px;
-  width: 400px;
+  width: 346px;
+  height: 14px;
+  font-size: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal .check__text {
+    width: 400px;
+    font-size: 14px;
+  }
 }
 .modal .check__link {
   color: #2196F3;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 0.42px;
+  font-size: 12px;
   text-decoration-line: underline;
+}
+@media screen and (min-width: 1200px) {
+  .modal .check__link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.42px;
+  }
 }
 .modal .check__btn {
   color: #FFFFFF;

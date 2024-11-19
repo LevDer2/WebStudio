@@ -19,13 +19,15 @@
     }
 
     & > .container {
-        display: flex;
-        align-items: center;
+        @media screen and (min-width: 768px) {
+          display: flex;
+          align-items: center;
+        }
       }
 
-&__,.container{
-        display: flex;
-    }
+// &__,.container{
+//         display: flex;
+//     }
 
     &__nav{
         display: flex;

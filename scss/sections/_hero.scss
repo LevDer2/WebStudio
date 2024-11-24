@@ -2,41 +2,32 @@
     padding-top: 118px;
     padding-bottom: 118px;
     text-align: center;
-    background-image: linear-gradient($gradient, $gradient), url(../../img/mobile/heromobile@1x.webp);
+    background-image: linear-gradient($gradient, $gradient), url(../img/mobile/heromobile@1x.webp);
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   overflow: hidden;
   @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(
       $gradient, $gradient
       ),
-      url(../../img/mobile/heromobile@2x.webp);
+      url(../img/mobile/heromobile@2x.webp);
   }
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  overflow: hidden;
-
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
       $gradient, $gradient
       ),
-      url(../../img/tablet/herotablet@1x.webp);
+      url(../img/tablet/herotablet@1x.webp);
     @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(
         $gradient, $gradient
         ),
-        url(../../img/tablet/hero@2x.webp);
+        url(../img/tablet/hero@2x.webp);
     }
   }
 
@@ -46,15 +37,14 @@
     background-image: linear-gradient(
       $gradient, $gradient
       ),
-      url(../../img/deskstop/hero@1x.webp);
+      url(../img/deskstop/hero@1x.webp);
     @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(
         $gradient, $gradient
         ),
-        url(../../img/deskstop/hero@2x.webp);
+        url(../img/deskstop/hero@2x.webp);
     }
       }
 
